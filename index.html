@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cakes Bakery - Delicious, natural, and healthy cakes made with love. Order now for the sweetest experience.">
+    <meta name="keywords" content="bakery, cakes, healthy cakes, strawberry cake, strawberry desserts">
+    <meta name="author" content="Cakes Bakery">
+    <title>Cakes Bakery - Natural and Healthy Cakes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Background Video -->
+        <div class="video-bg-container">
+            <video id="bg-video" class="video-bg" muted playsinline preload="auto">
+                <source src="Donut_world.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating strawberry s1"></div>
+        <div class="floating strawberry s2"></div>
+        <div class="floating strawberry s3"></div>
+        <div class="floating flowery f1"></div>
+        <div class="floating flowery f2"></div>
+
+        <!-- Removed Sidebar Left to shift elements to bottom right -->
+        <!-- Sidebar Right -->
+        <aside class="sidebar-right">
+            <div class="page-indicator">
+                <span class="num">01</span>
+                <div class="line"></div>
+                <span class="num">03</span>
+            </div>
+        </aside>
+
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <div class="logo-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="logo-text">Cakes <span>bakery.</span></div>
+            </div>
+            <nav class="text-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="wooden-nav-btn active" id="nav-home">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="wooden-nav-btn" id="nav-cakes">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Cakes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="wooden-nav-btn" id="nav-about">
+                            <i class="fas fa-info-circle"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="wooden-nav-btn" id="nav-contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn search"><i class="fas fa-search"></i></button>
+                <button class="wooden-cart-button">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 14.09 4.12 15.22 4.96 16.29c.56.71 1.41 1.12 2.31 1.12h12v-2H7.27c-.14 0-.27-.06-.33-.17-.06-.11-.06-.23 0-.34l.23-.41z">
+                        </path>
+                    </svg>
+                    <span class="badge">2</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="hero-text">
+                <h1 class="main-heading">Natural and <br><span>healthy Cakes.</span></h1>
+                <p class="description">
+                    Hand-crafted with a pinch of magic and a whole lot of love! Our cakes are fluffy clouds of
+                    sweetness, topped with the freshest strawberries to make your heart skip a beat. Treat yourself to a
+                    slice of happiness today!
+                </p>
+            </section>
+
+            <div class="bottom-right-panel">
+                <h2 class="sub-heading">Every One <span class="cursive">Love's</span></h2>
+                <div class="actions">
+                    <button class="Btn" aria-label="Order Now">ORDER NOW</button>
+                    <button class="Btn" aria-label="Explore More">EXPLORE</button>
+                </div>
+            </div>
+
+            <div class="bottom-center-panel">
+                <div class="promo-text-minimal">ANY TYPE OF WEBPAGE YOU NEED</div>
+                <div class="social-links-minimal">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scroller element for driving the animation -->
+    <div class="scroll-proxy">
+        <div class="scroll-section phase-1"></div>
+        <div class="scroll-section phase-2">
+            <h2 class="phase-text">Travelling Inside the Donut...</h2>
+        </div>
+        <div class="scroll-section phase-3">
+            <h2 class="phase-text bubble-headline">Cakes Bakery</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
